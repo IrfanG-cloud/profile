@@ -35,26 +35,25 @@ export default function Header() {
 
   return (
     <div className="w-full">
-      <nav className="w-full flex fixed drop-shadow-m px-20 py-4 h-20 z-10 ">
+      <nav className="w-full flex fixed px-20 py-4 h-20 z-10 ">
         <div className="text-4xl w-3/4">
-          <Link href="/"><h1 className="">Irfan G.</h1>
+          <Link href="/"><h1 className="text-white font-bold">Irfan G.</h1>
           </Link>
         </div>
         <div className=" w-full flex justify-end ">
-            <div className="text-[16px] text-[#222] ">
+            <div className="text-[16px] text-[#222]">
               {NAV_ITEMS.map((item, idx) => {
                 return (
-                  <Link className="color-white px-[20px] font-semibold" href={`${item.href}`} key={idx}>
+                  <Link className="text-white px-[20px] font-semibold hover:bg-gray-50 hover:w-8 hover:py-4 hover:text-black" href={`${item.href}`} key={idx}>
                     {item.label}
                   </Link>
                 );
               })}
             </div>
             <div className="">
-            <button type="button" onClick={() => router.push('/pages/about')} className=" text-[#FDC010] px-4 font-semibold border-none text-1xl">LOGO GUIDE</button>
-          </div>
+              <button type="button" onClick={() => router.push('/pages/about')} className=" text-[#FDC010] ml-2 font-semibold text-1xl">LOGO GUIDE</button>
+            </div>
         </div>
-         
       </nav>
     </div>
   );

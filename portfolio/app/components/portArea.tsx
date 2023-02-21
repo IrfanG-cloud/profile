@@ -25,17 +25,16 @@ export default function PortfolioArea() {
         <div className='border-t-2 border-black ml-16 w-[100px] mt-8'></div>
       </div>
         <div className='w-1/2'>
-            <Image className="ml-12" src="/bg-1.jpg" height={800} width={500} alt="image" />
+            <Image className="ml-12" src="/manager-person.png" height={400} width={300} alt="image" />
             <h2 className='text-1xl my-8 font-bold'>CONTACT<br/>INFO</h2>
             <div className='border-t-2 border-black ml-16 w-[480px]'>
-                <p className='mt-6'>irfanghyan@gmail.com</p>
+                <p className='mt-6 text-2xl font-semibold'>irfanghyan@gmail.com</p>
             </div>
-        <div className="text-gray-900 hover:text-gray-400 flex flex-col ml-16 mt-8 leading-24">
-        <Link href='#'>Youtube</Link>
-        <Link href='#'>Instragram</Link>
-        <Link href='#'>Twitter</Link>
-        <Link href='#'>Facebook</Link>
-        <Link href='#'>Linkdin</Link>
+        <div className="text-gray-900 hover:text-gray-400 flex flex-col ml-16 mt-4 leading-24">
+            <div className="text-gray-600 hover:text-red-700 font-semibold mb-2"><Link href='#'>Youtube</Link></div>
+            <div className="text-gray-600 hover:text-blue-700 font-semibold mb-2"><Link href='#'>Facebook</Link></div>
+            <div className="text-gray-600 hover:text-blue-500 font-semibold mb-2"><Link href='#'>Linkedin</Link></div>
+            <div className="text-gray-600 hover:text-purple-700 font-semibold mb-2"><Link href='#'>Instagram</Link></div>
         </div>
       </div>
     </div>
